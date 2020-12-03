@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IF else else if
+	</title>
+</head>
+<body>
+	
+	<h1 id="header">Age ?</h1>
+	<input type="text" id="inp">
+	<button onclick="pressed()">Submit</button>
+	<p id="output"></p>
+
+
+	<script type="text/javascript">
+		function pressed(){
+			var text = parseInt(document.getElementById('inp').value);
+			var output = document.getElementById('output');
+
+			if (text > 18){
+				output.innerHTML = "You can Vote";
+			}else if (text == 18){
+				output.innerHTML = "You can also vote.";
+			}else{
+				output.innerHTML = "You cannot Vote";
+			}
+		}
+	</script>
+
+
+
+</body>
+</html>
